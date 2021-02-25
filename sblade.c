@@ -246,7 +246,7 @@ int editorSyntaxToColor(int hl) {
     case HL_KEYWORD1: return 33;
     case HL_KEYWORD2: return 32;
     case HL_STRING: return 35;
-    case HL_NUMBER: return 31;
+    case HL_NUMBER: return 93;
     case HL_MATCH: return 34;
     default: return 37;
   }
@@ -941,7 +941,7 @@ int main(int argc, char *argv[]) {
   }
 
   editorSetStatusMessage(
-    "HELP: Ctrl-S = save | Ctrl-Q = quit | Ctrl-F = find");
+    "HELP: Ctrl-S = Save | Ctrl-Q = Quit | Ctrl-F = Find");
 
   while (1) {
     editorRefreshScreen();

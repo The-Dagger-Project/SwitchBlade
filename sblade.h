@@ -15,7 +15,7 @@
 #include <time.h>
 #include <unistd.h>
 
-#define SwitchBlade_VERSION "0.0.1"
+#define SwitchBlade_VERSION "0.0.2"
 #define SwitchBlade_TAB_STOP 8
 #define SwitchBlade_QUIT_TIMES 3
 
@@ -87,11 +87,13 @@ struct editorConfig {
 
 struct editorConfig E;
 
-char *C_HL_extensions[] = { ".c", ".h", ".cpp", NULL };
-char *C_HL_keywords[] = {
+char *HL_extensions[] = { ".c", ".h", ".dgr", ".cpp", NULL };
+char *HL_keywords[] = {
   "switch", "if", "while", "for", "break", "continue", "return", "else",
   "struct", "union", "typedef", "static", "enum", "class", "case", "printf",
-  "#include",
+  "scanf", "#include", "#define",
+
+  "set", "print", "readint", "readstr", "load", "fun",
 
   "int|", "long|", "double|", "float|", "char|", "unsigned|", "signed|",
   "void|", NULL
@@ -100,8 +102,8 @@ char *C_HL_keywords[] = {
 struct editorSyntax HLDB[] = {
   {
     "c",
-    C_HL_extensions,
-    C_HL_keywords,
+    HL_extensions,
+    HL_keywords,
     "//", "/*", "*/",
     HL_HIGHLIGHT_NUMBERS | HL_HIGHLIGHT_STRINGS
   },

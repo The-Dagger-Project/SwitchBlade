@@ -1,5 +1,5 @@
 # SwitchBlade Editor
-SwitchBlade is an alternative to the command line text editor VIM. It supports syntax highlighting for C and C++. It also has some more familiar commands for exiting, saving, and searching in files, which makes it easier for beginners to use than VIM. 
+SwitchBlade is an alternative to the command line text editor VIM. It supports syntax highlighting for Dagger, C, and C++. It also has some more familiar commands for exiting, saving, and searching in files, which makes it easier for beginners to use than VIM. 
 
 ## Install
 (Currently only supports Linux, we're working on support for Windows and MacOS)
