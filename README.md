@@ -39,4 +39,4 @@ sblade
 
 Write down the contents of your file, then pres Ctrl+S to save. Type the name that you want to save your file as, and press enter.
 
-To exit, press Ctrl-Q
+To exit, press Ctrl-Q 3 times
