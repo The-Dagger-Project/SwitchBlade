@@ -18,10 +18,14 @@ Enter the SwitchBlade directory:
 ```bash
 cd SwitchBlade
 ```
+Build it using make
+```bash
+make
+```
 Add the executable to /usr/bin:
 
 ```bash
-sudo cp ./sblade /usr/bin
+sudo cp sblade /usr/bin
 ```
 
 And that's all, you now have SwitchBlade installed!
